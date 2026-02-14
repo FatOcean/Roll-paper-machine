@@ -1,0 +1,91 @@
+/* pages/motor/index.wxss */
+.page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1d2671 0%, #c33764 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #fff;
+  width: 100%;
+  max-width: 680rpx;
+  border-radius: 32rpx;
+  padding: 40rpx;
+  box-shadow: 0 20rpx 60rpx rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  color: #1a1a1a;
+}
+
+.section {
+  margin-top: 36rpx;
+  padding-top: 24rpx;
+  border-top: 1rpx solid #eee;
+}
+
+.section:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.section-title {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.input {
+  width: 100%;
+  font-size: 30rpx;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  border: 1rpx solid #ddd;
+  box-sizing: border-box;
+  margin-bottom: 16rpx;
+}
+
+.picker {
+  padding: 24rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 16rpx;
+  font-size: 30rpx;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+
+.btn {
+  width: 100%;
+  font-size: 30rpx;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  margin-top: 16rpx;
+}
+
+.btn::after {
+  border: none;
+}
+
+.btn-secondary {
+  background: #10b981;
+}
+
+.status {
+  margin-top: 32rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #666;
+}

@@ -1,0 +1,29 @@
+<!--pages/motor/index.wxml-->
+<view class="page">
+  <view class="card">
+    <view class="title">⚙️ 电机控制</view>
+
+    <view class="section">
+      <view class="section-title">① 点动</view>
+      <button class="btn" bindtap="onJog" data-sec="0.3">点动 0.3 秒</button>
+      <button class="btn" bindtap="onJog" data-sec="0.5">点动 0.5 秒</button>
+    </view>
+
+    <view class="section">
+      <view class="section-title">② 手动运行</view>
+      <input class="input" type="digit" placeholder="运行秒数" value="{{manualTime}}" data-field="manualTime" bindinput="onInput"/>
+      <button class="btn" bindtap="onManualRun">立即运行（秒）</button>
+    </view>
+
+    <view class="section">
+      <view class="section-title">③ 每天定时</view>
+      <picker mode="time" value="{{dailyTime}}" bindchange="onDailyTimeChange">
+        <view class="picker">每日时间：{{dailyTime || '选择时间'}}</view>
+      </picker>
+      <input class="input" type="digit" placeholder="运行秒数" value="{{dailyDuration}}" data-field="dailyDuration" bindinput="onInput"/>
+      <button class="btn btn-secondary" bindtap="onSetDaily">设置每天定时（秒）</button>
+    </view>
+
+    <view class="status">{{statusText}}</view>
+  </view>
+</view>

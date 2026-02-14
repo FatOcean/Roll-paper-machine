@@ -1,0 +1,12 @@
+{
+  "pages": ["pages/motor/index"],
+  "window": {
+    "backgroundColor": "#1d2671",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1d2671",
+    "navigationBarTitleText": "电机控制",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
